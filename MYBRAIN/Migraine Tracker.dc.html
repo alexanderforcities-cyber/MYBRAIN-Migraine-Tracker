@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  ::-webkit-scrollbar { width: 0; height: 0; }
+  @keyframes breathe { 0%,100% { transform: translate(-50%,-50%) scale(1); opacity:.9 } 50% { transform: translate(-50%,-50%) scale(1.12); opacity:1 } }
+  @keyframes breathe2 { 0%,100% { transform: translate(-50%,-50%) scale(1.05); opacity:.55 } 50% { transform: translate(-50%,-50%) scale(.92); opacity:.8 } }
+  @keyframes drift { 0%,100% { transform: translate(-50%,-50%) rotate(0deg) scale(1) } 50% { transform: translate(-48%,-52%) rotate(8deg) scale(1.08) } }
+  .motion-off .aura, .motion-off .aura2, .motion-off .mesh { animation: none !important; }
+</style>
+</helmet>
+
+<div class="root {{motionClass}}" style="width:max-content;min-width:100%;min-height:100vh;box-sizing:border-box;padding:48px;background:#e7e3da;font-family:'Figtree',-apple-system,system-ui,sans-serif;color:#2f352c">
+
+  <div style="max-width:1180px;margin-bottom:40px">
+    <div style="font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#9a9385;margin-bottom:10px">MyBrain · Migraine Tracker</div>
+    <h1 style="margin:0 0 12px;font-size:32px;font-weight:700;letter-spacing:-.02em">Three calming directions</h1>
+    <p style="margin:0;font-size:15px;line-height:1.6;color:#7a7567;max-width:620px">Same warm sage palette and soft humanist type throughout — the directions differ in shape language, density, and how they visualize pain. Mobile-first. Mix and match: pick a layout you like, a chart style, a landing treatment. Toggle <b>First run</b> and <b>Reduce motion</b> in Tweaks.</p>
+  </div>
+
+  <!-- ============ DIRECTION A — HAVEN ============ -->
+  <div style="margin-bottom:18px">
+    <div style="font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#6f7d66">Direction A — Haven</div>
+    <div style="font-size:14px;color:#8c8779;margin-top:4px;max-width:560px">Soft &amp; rounded. Pillowy cards, generous air, gentle gradients. The reassuring, by-the-book baseline.</div>
+  </div>
+  <div style="display:flex;gap:34px;align-items:flex-start;margin-bottom:64px">
+
+    <!-- A: Home -->
+    <div style="flex:none;width:300px;display:flex;flex-direction:column;gap:11px">
+      <div style="font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#9a9385">Welcome</div>
+      <div style="width:300px;height:642px;background:#15140f;border-radius:46px;padding:9px;box-shadow:0 26px 54px -20px rgba(40,38,30,.55)">
+        <div style="position:relative;width:100%;height:100%;border-radius:38px;overflow:hidden;background:#f5f2ec;display:flex;flex-direction:column">
+          <div style="position:absolute;top:11px;left:50%;transform:translateX(-50%);width:92px;height:26px;background:#15140f;border-radius:16px;z-index:30"></div>
+          <div style="display:flex;justify-content:space-between;padding:14px 26px 2px;font-size:12px;font-weight:700;color:#2f352c;z-index:20"><span>9:41</span><span style="letter-spacing:1.5px">●●●</span></div>
+          <div style="flex:1;overflow-y:auto;display:flex;flex-direction:column;align-items:center;text-align:center;padding:20px 26px 28px">
+            <div style="position:relative;width:200px;height:200px;margin-top:30px;margin-bottom:8px">
+              <div class="aura" style="position:absolute;top:50%;left:50%;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,#b9cbb0 0%,rgba(185,203,176,0) 68%);animation:breathe 7s ease-in-out infinite"></div>
+              <div class="aura2" style="position:absolute;top:50%;left:50%;width:130px;height:130px;border-radius:50%;background:radial-gradient(circle,#dfe8d6 0%,rgba(223,232,214,0) 72%);animation:breathe2 7s ease-in-out infinite"></div>
+              <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:74px;height:74px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px -8px rgba(111,125,102,.5)">
+                <div style="width:30px;height:30px;border-radius:50%;border:3px solid #6f7d66"></div>
+              </div>
+            </div>
+            <div style="font-size:13px;color:#9a9385;font-weight:500;margin-bottom:2px">Good evening, Mara</div>
+            <h2 style="margin:0 0 6px;font-size:27px;font-weight:700;letter-spacing:-.02em">How's your head?</h2>
+            <p style="margin:0 0 22px;font-size:13.5px;line-height:1.55;color:#8c8779">A quiet place to notice patterns,<br>one episode at a time.</p>
+            <button style="width:100%;padding:16px;border:none;border-radius:20px;background:#6f7d66;color:#fff;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer;box-shadow:0 12px 24px -10px rgba(111,125,102,.7)" style-hover="background:#5f6c57">＋  Log an episode</button>
+            <button style="width:100%;margin-top:11px;padding:15px;border:1px solid #ddd6c8;border-radius:20px;background:#fff;color:#5a604f;font-size:15px;font-weight:600;font-family:inherit;cursor:pointer" style-hover="border-color:#c2bba9">View history</button>
+            <div style="display:flex;gap:10px;width:100%;margin-top:18px">
+              <div style="flex:1;background:#fff;border-radius:18px;padding:14px 12px;text-align:left"><div style="font-size:23px;font-weight:800;color:#6f7d66">12</div><div style="font-size:11px;color:#9a9385;font-weight:500;line-height:1.3">clear days<br>this month</div></div>
+              <div style="flex:1;background:#fff;border-radius:18px;padding:14px 12px;text-align:left"><div style="font-size:23px;font-weight:800;color:#d4ab6a">4</div><div style="font-size:11px;color:#9a9385;font-weight:500;line-height:1.3">episodes<br>logged</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- A: Log -->
+    <div style="flex:none;width:300px;display:flex;flex-direction:column;gap:11px">
+      <div style="font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#9a9385">Log episode</div>
+      <div style="width:300px;height:642px;background:#15140f;border-radius:46px;padding:9px;box-shadow:0 26px 54px -20px rgba(40,38,30,.55)">
+        <div style="position:relative;width:100%;height:100%;border-radius:38px;overflow:hidden;background:#f5f2ec;display:flex;flex-direction:column">
+          <div style="position:absolute;top:11px;left:50%;transform:translateX(-50%);width:92px;height:26px;background:#15140f;border-radius:16px;z-index:30"></div>
+          <div style="display:flex;justify-content:space-between;padding:14px 26px 2px;font-size:12px;font-weight:700;color:#2f352c;z-index:20"><span>9:41</span><span style="letter-spacing:1.5px">●●●</span></div>
+          <div style="display:flex;align-items:center;gap:12px;padding:8px 22px 14px"><div style="width:34px;height:34px;border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center;color:#6f7d66;font-size:18px;font-weight:700">‹</div><h2 style="margin:0;font-size:21px;font-weight:700;letter-spacing:-.02em">New episode</h2></div>
+          <div style="flex:1;overflow-y:auto;padding:0 22px 26px;display:flex;flex-direction:column;gap:14px">
+            <div style="background:#fff;border-radius:22px;padding:17px 18px">
+              <div style="font-size:13px;font-weight:600;color:#7a7567;margin-bottom:14px">Pain level</div>
+              <div style="display:flex;align-items:baseline;gap:6px;margin-bottom:14px"><span style="font-size:42px;font-weight:800;color:#c07d63;line-height:1">7</span><span style="font-size:15px;color:#b3ab98;font-weight:600">/ 10 · severe</span></div>
+              <div style="position:relative;height:10px;border-radius:6px;background:linear-gradient(90deg,#8fae84,#d4ab6a,#c07d63)">
+                <div style="position:absolute;top:50%;left:68%;transform:translate(-50%,-50%);width:24px;height:24px;border-radius:50%;background:#fff;border:3px solid #c07d63;box-shadow:0 3px 8px rgba(0,0,0,.18)"></div>
+              </div>
+            </div>
+            <div style="background:#fff;border-radius:22px;padding:17px 18px">
+              <div style="font-size:13px;font-weight:600;color:#7a7567;margin-bottom:13px">Where does it hurt?</div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px">
+                <span style="padding:8px 14px;border-radius:14px;background:#6f7d66;color:#fff;font-size:13px;font-weight:600">Right side</span>
+                <span style="padding:8px 14px;border-radius:14px;background:#f0ede5;color:#8c8779;font-size:13px;font-weight:500">Behind eyes</span>
+                <span style="padding:8px 14px;border-radius:14px;background:#f0ede5;color:#8c8779;font-size:13px;font-weight:500">Forehead</span>
+                <span style="padding:8px 14px;border-radius:14px;background:#f0ede5;color:#8c8779;font-size:13px;font-weight:500">Whole head</span>
+              </div>
+            </div>
+            <div style="background:#fff;border-radius:22px;padding:17px 18px">
+              <div style="font-size:13px;font-weight:600;color:#7a7567;margin-bottom:13px">Symptoms</div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px">
+                <span style="padding:8px 14px;border-radius:14px;background:#6f7d66;color:#fff;font-size:13px;font-weight:600">Light sensitivity</span>
+                <span style="padding:8px 14px;border-radius:14px;background:#6f7d66;color:#fff;font-size:13px;font-weight:600">Nausea</span>
+                <span style="padding:8px 14px;border-radius:14px;background:#f0ede5;color:#8c8779;font-size:13px;font-weight:500">Aura</span>
+                <span style="padding:8px 14px;border-radius:14px;background:#f0ede5;color:#8c8779;font-size:13px;font-weight:500">Brain fog</span>
+                <span style="padding:8px 14px;border-radius:14px;background:#f0ede5;color:#8c8779;font-size:13px;font-weight:500">Fatigue</span>
+              </div>
+            </div>
+            <button style="width:100%;padding:16px;border:none;border-radius:20px;background:#6f7d66;color:#fff;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer;box-shadow:0 12px 24px -10px rgba(111,125,102,.7)" style-hover="background:#5f6c57">Save episode</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- A: Insights -->
+    <div style="flex:none;width:300px;display:flex;flex-direction:column;gap:11px">
+      <div style="font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#9a9385">Insights</div>
+      <div style="width:300px;height:642px;background:#15140f;border-radius:46px;padding:9px;box-shadow:0 26px 54px -20px rgba(40,38,30,.55)">
+        <div style="position:relative;width:100%;height:100%;border-radius:38px;overflow:hidden;background:#f5f2ec;display:flex;flex-direction:column">
+          <div style="position:absolute;top:11px;left:50%;transform:translateX(-50%);width:92px;height:26px;background:#15140f;border-radius:16px;z-index:30"></div>
+          <div style="display:flex;justify-content:space-between;padding:14px 26px 2px;font-size:12px;font-weight:700;color:#2f352c;z-index:20"><span>9:41</span><span style="letter-spacing:1.5px">●●●</span></div>
+          <div style="padding:8px 22px 12px"><h2 style="margin:0;font-size:21px;font-weight:700;letter-spacing:-.02em">Insights</h2></div>
+          <div style="flex:1;overflow-y:auto;padding:0 22px 26px;display:flex;flex-direction:column;gap:14px">
+            <sc-if value="{{ hasData }}" hint-placeholder-val="{{ true }}">
+            <div style="display:flex;gap:10px">
+              <div style="flex:1;background:#fff;border-radius:18px;padding:14px"><div style="font-size:24px;font-weight:800;color:#6f7d66">5.2</div><div style="font-size:11px;color:#9a9385;font-weight:500">avg pain</div></div>
+              <div style="flex:1;background:#fff;border-radius:18px;padding:14px"><div style="font-size:24px;font-weight:800;color:#6f7d66">6.5h</div><div style="font-size:11px;color:#9a9385;font-weight:500">avg length</div></div>
+            </div>
+            <div style="background:#fff;border-radius:22px;padding:17px 18px">
+              <div style="font-size:13px;font-weight:600;color:#7a7567;margin-bottom:16px">Episodes per month</div>
+              <div style="display:flex;align-items:flex-end;gap:9px;height:96px">
+                <sc-for list="{{ months }}" as="m" hint-placeholder-count="6">
+                  <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;height:100%;justify-content:flex-end">
+                    <div style="width:100%;border-radius:7px 7px 4px 4px;background:#bfceb4;height:{{ m.h }}"></div>
+                    <div style="font-size:9.5px;color:#b3ab98;font-weight:600">{{ m.m }}</div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+            <div style="background:#fff;border-radius:22px;padding:17px 18px">
+              <div style="font-size:13px;font-weight:600;color:#7a7567;margin-bottom:14px">Top triggers</div>
+              <div style="display:flex;flex-direction:column;gap:11px">
+                <sc-for list="{{ triggers }}" as="t" hint-placeholder-count="5">
+                  <div style="display:flex;align-items:center;gap:10px">
+                    <div style="width:78px;font-size:12px;color:#7a7567;font-weight:500;flex:none">{{ t.t }}</div>
+                    <div style="flex:1;height:9px;border-radius:5px;background:#f0ede5;overflow:hidden"><div style="height:100%;border-radius:5px;background:#9db391;width:{{ t.v }}"></div></div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+            </sc-if>
+            <sc-if value="{{ firstRun }}" hint-placeholder-val="{{ false }}">
+            <div style="background:#fff;border-radius:24px;padding:34px 22px;text-align:center;margin-top:20px">
+              <div style="width:60px;height:60px;border-radius:50%;background:radial-gradient(circle,#dfe8d6,#f0ede5);margin:0 auto 16px;display:flex;align-items:center;justify-content:center"><div style="width:22px;height:22px;border-radius:50%;border:3px solid #9db391"></div></div>
+              <div style="font-size:16px;font-weight:700;margin-bottom:6px">Nothing to chart yet</div>
+              <p style="margin:0;font-size:13px;line-height:1.55;color:#9a9385">Log a few episodes and your patterns —<br>triggers, timing, severity — appear here.</p>
+            </div>
+            </sc-if>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============ DIRECTION B — JOURNAL ============ -->
+  <div style="margin-bottom:18px">
+    <div style="font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#6f7d66">Direction B — Journal</div>
+    <div style="font-size:14px;color:#8c8779;margin-top:4px;max-width:560px">Editorial &amp; airy. Hairline dividers instead of cards, oversized type, a quiet diary rhythm. Calm through restraint.</div>
+  </div>
+  <div style="display:flex;gap:34px;align-items:flex-start;margin-bottom:64px">
+
+    <!-- B: Home -->
+    <div style="flex:none;width:300px;display:flex;flex-direction:column;gap:11px">
+      <div style="font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#9a9385">Welcome</div>
+      <div style="width:300px;height:642px;background:#15140f;border-radius:46px;padding:9px;box-shadow:0 26px 54px -20px rgba(40,38,30,.55)">
+        <div style="position:relative;width:100%;height:100%;border-radius:38px;overflow:hidden;background:#faf8f3;display:flex;flex-direction:column">
+          <div style="position:absolute;top:11px;left:50%;transform:translateX(-50%);width:92px;height:26px;background:#15140f;border-radius:16px;z-index:30"></div>
+          <div style="display:flex;justify-content:space-between;padding:14px 26px 2px;font-size:12px;font-weight:700;color:#2f352c;z-index:20"><span>9:41</span><span style="letter-spacing:1.5px">●●●</span></div>
+          <div style="flex:1;overflow-y:auto;padding:26px 28px 28px">
+            <div style="position:relative;width:64px;height:64px;margin-bottom:30px">
+              <div class="aura" style="position:absolute;top:50%;left:50%;width:64px;height:64px;border-radius:50%;background:radial-gradient(circle,#cdd8c6 0%,rgba(205,216,198,0) 70%);animation:breathe 8s ease-in-out infinite"></div>
+              <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:14px;height:14px;border-radius:50%;border:2px solid #6f7d66"></div>
+            </div>
+            <div style="font-size:13px;color:#a39c8c;font-weight:600;letter-spacing:.04em;margin-bottom:8px">WEDNESDAY · JUN 18</div>
+            <h2 style="margin:0 0 28px;font-size:34px;font-weight:700;line-height:1.12;letter-spacing:-.03em">Good<br>evening,<br>Mara.</h2>
+            <div style="border-top:1px solid #e7e2d6;padding:18px 0">
+              <div style="font-size:13px;color:#a39c8c;font-weight:500;margin-bottom:3px">It's been</div>
+              <div style="font-size:20px;font-weight:700"><span style="color:#6f7d66">12 days</span> since your last episode</div>
+            </div>
+            <div style="border-top:1px solid #e7e2d6;padding:18px 0 22px">
+              <div style="font-size:13px;color:#a39c8c;font-weight:500;margin-bottom:3px">This month</div>
+              <div style="font-size:20px;font-weight:700">4 episodes · avg pain 5.2</div>
+            </div>
+            <button style="width:100%;padding:17px;border:none;border-radius:0;background:#2f352c;color:#faf8f3;font-size:15px;font-weight:600;font-family:inherit;letter-spacing:.02em;cursor:pointer;display:flex;justify-content:space-between;align-items:center" style-hover="background:#444b3d"><span>Log an episode</span><span>→</span></button>
+            <button style="width:100%;margin-top:1px;padding:17px;border:1px solid #e0dacd;border-radius:0;background:transparent;color:#5a604f;font-size:15px;font-weight:600;font-family:inherit;cursor:pointer;display:flex;justify-content:space-between;align-items:center" style-hover="background:#f2efe7"><span>Open journal</span><span>→</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- B: Log -->
+    <div style="flex:none;width:300px;display:flex;flex-direction:column;gap:11px">
+      <div style="font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#9a9385">Log episode</div>
+      <div style="width:300px;height:642px;background:#15140f;border-radius:46px;padding:9px;box-shadow:0 26px 54px -20px rgba(40,38,30,.55)">
+        <div style="position:relative;width:100%;height:100%;border-radius:38px;overflow:hidden;background:#faf8f3;display:flex;flex-direction:column">
+          <div style="position:absolute;top:11px;left:50%;transform:translateX(-50%);width:92px;height:26px;background:#15140f;border-radius:16px;z-index:30"></div>
+          <div style="display:flex;justify-content:space-between;padding:14px 26px 2px;font-size:12px;font-weight:700;color:#2f352c;z-index:20"><span>9:41</span><span style="letter-spacing:1.5px">●●●</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 28px 16px"><span style="font-size:13px;color:#a39c8c;font-weight:600">Cancel</span><span style="font-size:13px;color:#a39c8c;font-weight:600;letter-spacing:.04em">NEW ENTRY</span></div>
+          <div style="flex:1;overflow-y:auto;padding:0 28px 26px">
+            <div style="font-size:13px;color:#a39c8c;font-weight:500;letter-spacing:.04em;margin-bottom:6px">PAIN LEVEL</div>
+            <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:16px"><span style="font-size:58px;font-weight:800;color:#c07d63;line-height:.9;letter-spacing:-.03em">7</span><span style="font-size:16px;color:#b3ab98;font-weight:600">severe</span></div>
+            <div style="display:flex;gap:5px;margin-bottom:26px">
+              <sc-for list="{{ scale }}" as="n" hint-placeholder-count="10">
+                <div style="flex:1;height:30px;border-radius:3px;background:{{ n.c }}"></div>
+              </sc-for>
+            </div>
+            <div style="border-top:1px solid #e7e2d6;padding:18px 0">
+              <div style="font-size:13px;color:#a39c8c;font-weight:500;letter-spacing:.04em;margin-bottom:12px">LOCATION</div>
+              <div style="display:flex;flex-wrap:wrap;gap:18px;font-size:16px;font-weight:600">
+                <span style="color:#2f352c;border-bottom:2px solid #6f7d66;padding-bottom:2px">Right side</span>
+                <span style="color:#c2bba9">Behind eyes</span>
+                <span style="color:#c2bba9">Forehead</span>
+              </div>
+            </div>
+            <div style="border-top:1px solid #e7e2d6;padding:18px 0">
+              <div style="font-size:13px;color:#a39c8c;font-weight:500;letter-spacing:.04em;margin-bottom:12px">SYMPTOMS</div>
+              <div style="display:flex;flex-wrap:wrap;gap:14px 18px;font-size:16px;font-weight:600">
+                <span style="color:#2f352c;border-bottom:2px solid #6f7d66;padding-bottom:2px">Light sensitivity</span>
+                <span style="color:#2f352c;border-bottom:2px solid #6f7d66;padding-bottom:2px">Nausea</span>
+                <span style="color:#c2bba9">Aura</span>
+                <span style="color:#c2bba9">Fatigue</span>
+              </div>
+            </div>
+            <div style="border-top:1px solid #e7e2d6;padding:18px 0 24px">
+              <div style="font-size:13px;color:#a39c8c;font-weight:500;letter-spacing:.04em;margin-bottom:10px">NOTES</div>
+              <div style="font-size:15px;color:#c2bba9;font-style:italic">Started after the afternoon meeting…</div>
+            </div>
+            <button style="width:100%;padding:17px;border:none;background:#2f352c;color:#faf8f3;font-size:15px;font-weight:600;font-family:inherit;cursor:pointer;display:flex;justify-content:space-between;align-items:center" style-hover="background:#444b3d"><span>Save entry</span><span>→</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- B: Insights -->
+    <div style="flex:none;width:300px;display:flex;flex-direction:column;gap:11px">
+      <div style="font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#9a9385">Journal &amp; trends</div>
+      <div style="width:300px;height:642px;background:#15140f;border-radius:46px;padding:9px;box-shadow:0 26px 54px -20px rgba(40,38,30,.55)">
+        <div style="position:relative;width:100%;height:100%;border-radius:38px;overflow:hidden;background:#faf8f3;display:flex;flex-direction:column">
+          <div style="position:absolute;top:11px;left:50%;transform:translateX(-50%);width:92px;height:26px;background:#15140f;border-radius:16px;z-index:30"></div>
+          <div style="display:flex;justify-content:space-between;padding:14px 26px 2px;font-size:12px;font-weight:700;color:#2f352c;z-index:20"><span>9:41</span><span style="letter-spacing:1.5px">●●●</span></div>
+          <div style="padding:12px 28px 14px"><h2 style="margin:0;font-size:26px;font-weight:700;letter-spacing:-.02em">Journal</h2></div>
+          <div style="flex:1;overflow-y:auto;padding:0 28px 26px">
+            <sc-if value="{{ hasData }}" hint-placeholder-val="{{ true }}">
+            <div style="display:flex;align-items:flex-end;gap:7px;height:70px;border-bottom:1px solid #e7e2d6;padding-bottom:10px;margin-bottom:6px">
+              <sc-for list="{{ months }}" as="m" hint-placeholder-count="6">
+                <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%"><div style="width:100%;background:#cdd8c6;height:{{ m.h }}"></div></div>
+              </sc-for>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:9.5px;color:#b3ab98;font-weight:600;margin-bottom:22px"><span>JAN</span><span>JUN</span></div>
+            <sc-for list="{{ recent }}" as="e" hint-placeholder-count="3">
+              <div style="border-top:1px solid #e7e2d6;padding:15px 0;display:flex;gap:13px">
+                <div style="width:40px;flex:none"><div style="font-size:26px;font-weight:800;color:{{ e.color }};line-height:1">{{ e.pain }}</div><div style="font-size:9px;color:#b3ab98;font-weight:600">/10</div></div>
+                <div style="flex:1"><div style="font-size:13px;font-weight:700;margin-bottom:3px">{{ e.date }}</div><div style="font-size:12px;color:#a39c8c;font-weight:500;line-height:1.45">{{ e.loc }} · {{ e.tagline }}</div></div>
+              </div>
+            </sc-for>
+            </sc-if>
+            <sc-if value="{{ firstRun }}" hint-placeholder-val="{{ false }}">
+            <div style="padding:60px 6px 0;text-align:center">
+              <div style="position:relative;width:54px;height:54px;margin:0 auto 20px"><div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;background:radial-gradient(circle,#dfe8d6,rgba(223,232,214,0) 70%)"></div><div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:12px;height:12px;border-radius:50%;border:2px solid #9db391"></div></div>
+              <div style="font-size:19px;font-weight:700;letter-spacing:-.02em;margin-bottom:8px">Your journal is empty</div>
+              <p style="margin:0;font-size:14px;line-height:1.6;color:#a39c8c">When you log your first episode it will<br>appear here, newest at the top.</p>
+            </div>
+            </sc-if>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============ DIRECTION C — AURA ============ -->
+  <div style="margin-bottom:18px">
+    <div style="font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#6f7d66">Direction C — Aura</div>
+    <div style="font-size:14px;color:#8c8779;margin-top:4px;max-width:560px">Expressive &amp; visual. A soft breathing mesh, pain rendered as a colored aura, radial charts. The creative, mood-forward take.</div>
+  </div>
+  <div style="display:flex;gap:34px;align-items:flex-start;margin-bottom:20px">
+
+    <!-- C: Home -->
+    <div style="flex:none;width:300px;display:flex;flex-direction:column;gap:11px">
+      <div style="font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#9a9385">Welcome</div>
+      <div style="width:300px;height:642px;background:#15140f;border-radius:46px;padding:9px;box-shadow:0 26px 54px -20px rgba(40,38,30,.55)">
+        <div style="position:relative;width:100%;height:100%;border-radius:38px;overflow:hidden;background:#1f2620;display:flex;flex-direction:column">
+          <div class="mesh" style="position:absolute;top:50%;left:50%;width:340px;height:340px;background:radial-gradient(circle at 35% 35%,#7d9170 0%,rgba(125,145,112,0) 55%),radial-gradient(circle at 70% 60%,#b7a06a 0%,rgba(183,160,106,0) 50%),radial-gradient(circle at 55% 80%,#9c6f5e 0%,rgba(156,111,94,0) 55%);filter:blur(8px);animation:drift 14s ease-in-out infinite;z-index:0"></div>
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(31,38,32,.1) 0%,rgba(31,38,32,.55) 60%,rgba(31,38,32,.9) 100%);z-index:1"></div>
+          <div style="position:absolute;top:11px;left:50%;transform:translateX(-50%);width:92px;height:26px;background:#15140f;border-radius:16px;z-index:30"></div>
+          <div style="display:flex;justify-content:space-between;padding:14px 26px 2px;font-size:12px;font-weight:700;color:#eee9dd;z-index:20"><span>9:41</span><span style="letter-spacing:1.5px">●●●</span></div>
+          <div style="position:relative;z-index:5;flex:1;overflow-y:auto;display:flex;flex-direction:column;padding:24px 26px 28px;color:#f1ede2">
+            <div style="flex:1"></div>
+            <div style="font-size:13px;color:#c8d0bf;font-weight:600;letter-spacing:.04em;margin-bottom:8px">EVENING · CALM</div>
+            <h2 style="margin:0 0 10px;font-size:32px;font-weight:700;line-height:1.1;letter-spacing:-.02em">How is your<br>head right now?</h2>
+            <p style="margin:0 0 22px;font-size:14px;line-height:1.55;color:#cdd3c4">12 clear days. Your longest calm<br>stretch this season.</p>
+            <button style="width:100%;padding:16px;border:none;border-radius:18px;background:#f1ede2;color:#2f352c;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer" style-hover="background:#fff">＋  Log an episode</button>
+            <button style="width:100%;margin-top:10px;padding:15px;border:1px solid rgba(241,237,226,.3);border-radius:18px;background:rgba(241,237,226,.08);color:#f1ede2;font-size:15px;font-weight:600;font-family:inherit;cursor:pointer" style-hover="background:rgba(241,237,226,.16)">See my patterns</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- C: Log -->
+    <div style="flex:none;width:300px;display:flex;flex-direction:column;gap:11px">
+      <div style="font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#9a9385">Log episode</div>
+      <div style="width:300px;height:642px;background:#15140f;border-radius:46px;padding:9px;box-shadow:0 26px 54px -20px rgba(40,38,30,.55)">
+        <div style="position:relative;width:100%;height:100%;border-radius:38px;overflow:hidden;background:#f4f1ea;display:flex;flex-direction:column">
+          <div style="position:absolute;top:11px;left:50%;transform:translateX(-50%);width:92px;height:26px;background:#15140f;border-radius:16px;z-index:30"></div>
+          <div style="display:flex;justify-content:space-between;padding:14px 26px 2px;font-size:12px;font-weight:700;color:#2f352c;z-index:20"><span>9:41</span><span style="letter-spacing:1.5px">●●●</span></div>
+          <div style="display:flex;align-items:center;gap:12px;padding:8px 24px 6px"><div style="width:34px;height:34px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;color:#6f7d66;font-size:18px;font-weight:700">‹</div><h2 style="margin:0;font-size:20px;font-weight:700;letter-spacing:-.02em">New episode</h2></div>
+          <div style="flex:1;overflow-y:auto;padding:6px 24px 26px;display:flex;flex-direction:column;align-items:center">
+            <div style="position:relative;width:184px;height:184px;margin:8px 0 6px">
+              <div class="aura" style="position:absolute;top:50%;left:50%;width:184px;height:184px;border-radius:50%;background:radial-gradient(circle,#c98e76 0%,rgba(201,142,118,0) 70%);animation:breathe 5s ease-in-out infinite"></div>
+              <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:118px;height:118px;border-radius:50%;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 10px 30px -10px rgba(192,125,99,.6)">
+                <div style="font-size:46px;font-weight:800;color:#c07d63;line-height:.9">7</div>
+                <div style="font-size:12px;color:#b3ab98;font-weight:600;letter-spacing:.06em">SEVERE</div>
+              </div>
+            </div>
+            <div style="font-size:12.5px;color:#a39c8c;font-weight:500;margin-bottom:18px">Drag the ring to set your pain</div>
+            <div style="width:100%;background:#fff;border-radius:20px;padding:16px 18px;margin-bottom:12px">
+              <div style="font-size:12px;font-weight:700;color:#a39c8c;letter-spacing:.05em;margin-bottom:12px">LOCATION</div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px">
+                <span style="padding:8px 14px;border-radius:999px;background:#c07d63;color:#fff;font-size:13px;font-weight:600">Right side</span>
+                <span style="padding:8px 14px;border-radius:999px;background:#f0ede5;color:#8c8779;font-size:13px;font-weight:500">Behind eyes</span>
+                <span style="padding:8px 14px;border-radius:999px;background:#f0ede5;color:#8c8779;font-size:13px;font-weight:500">Forehead</span>
+              </div>
+            </div>
+            <div style="width:100%;background:#fff;border-radius:20px;padding:16px 18px;margin-bottom:16px">
+              <div style="font-size:12px;font-weight:700;color:#a39c8c;letter-spacing:.05em;margin-bottom:12px">SYMPTOMS</div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px">
+                <span style="padding:8px 14px;border-radius:999px;background:#6f7d66;color:#fff;font-size:13px;font-weight:600">Light sensitivity</span>
+                <span style="padding:8px 14px;border-radius:999px;background:#6f7d66;color:#fff;font-size:13px;font-weight:600">Nausea</span>
+                <span style="padding:8px 14px;border-radius:999px;background:#f0ede5;color:#8c8779;font-size:13px;font-weight:500">Aura</span>
+              </div>
+            </div>
+            <button style="width:100%;padding:16px;border:none;border-radius:18px;background:#2f352c;color:#f1ede2;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer" style-hover="background:#444b3d">Save episode</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- C: Insights -->
+    <div style="flex:none;width:300px;display:flex;flex-direction:column;gap:11px">
+      <div style="font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#9a9385">Insights</div>
+      <div style="width:300px;height:642px;background:#15140f;border-radius:46px;padding:9px;box-shadow:0 26px 54px -20px rgba(40,38,30,.55)">
+        <div style="position:relative;width:100%;height:100%;border-radius:38px;overflow:hidden;background:#1f2620;display:flex;flex-direction:column">
+          <div style="position:absolute;top:11px;left:50%;transform:translateX(-50%);width:92px;height:26px;background:#15140f;border-radius:16px;z-index:30"></div>
+          <div style="display:flex;justify-content:space-between;padding:14px 26px 2px;font-size:12px;font-weight:700;color:#eee9dd;z-index:20"><span>9:41</span><span style="letter-spacing:1.5px">●●●</span></div>
+          <div style="padding:10px 24px 14px;color:#f1ede2"><h2 style="margin:0;font-size:21px;font-weight:700;letter-spacing:-.02em">Your patterns</h2></div>
+          <div style="flex:1;overflow-y:auto;padding:0 22px 26px;display:flex;flex-direction:column;gap:14px;color:#f1ede2">
+            <sc-if value="{{ hasData }}" hint-placeholder-val="{{ true }}">
+            <div style="background:rgba(241,237,226,.06);border:1px solid rgba(241,237,226,.1);border-radius:22px;padding:20px;display:flex;align-items:center;gap:18px">
+              <div style="position:relative;width:88px;height:88px;flex:none">
+                <svg viewBox="0 0 36 36" style="width:88px;height:88px;transform:rotate(-90deg)">
+                  <circle cx="18" cy="18" r="15.9" fill="none" stroke="rgba(241,237,226,.12)" stroke-width="3.4"></circle>
+                  <circle cx="18" cy="18" r="15.9" fill="none" stroke="#d4ab6a" stroke-width="3.4" stroke-linecap="round" stroke-dasharray="52 100"></circle>
+                </svg>
+                <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center"><div style="font-size:22px;font-weight:800;line-height:1">5.2</div><div style="font-size:9px;color:#b9c0ad;font-weight:600">AVG</div></div>
+              </div>
+              <div style="flex:1"><div style="font-size:14px;font-weight:700;margin-bottom:5px">Moderate month</div><div style="font-size:12.5px;line-height:1.5;color:#bcc3b1">Pain is trending down — 18% lower than last month.</div></div>
+            </div>
+            <div style="background:rgba(241,237,226,.06);border:1px solid rgba(241,237,226,.1);border-radius:22px;padding:18px">
+              <div style="font-size:12px;font-weight:700;color:#b9c0ad;letter-spacing:.05em;margin-bottom:16px">EPISODES PER MONTH</div>
+              <div style="display:flex;align-items:flex-end;gap:9px;height:84px">
+                <sc-for list="{{ months }}" as="m" hint-placeholder-count="6">
+                  <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;height:100%;justify-content:flex-end">
+                    <div style="width:100%;border-radius:6px;background:linear-gradient(180deg,#b7a06a,#7d9170);height:{{ m.h }}"></div>
+                    <div style="font-size:9px;color:#9aa28d;font-weight:600">{{ m.m }}</div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+            <div style="background:rgba(241,237,226,.06);border:1px solid rgba(241,237,226,.1);border-radius:22px;padding:18px">
+              <div style="font-size:12px;font-weight:700;color:#b9c0ad;letter-spacing:.05em;margin-bottom:14px">TOP TRIGGERS</div>
+              <div style="display:flex;flex-direction:column;gap:11px">
+                <sc-for list="{{ triggers }}" as="t" hint-placeholder-count="5">
+                  <div style="display:flex;align-items:center;gap:10px">
+                    <div style="width:74px;font-size:12px;color:#cdd3c4;font-weight:500;flex:none">{{ t.t }}</div>
+                    <div style="flex:1;height:8px;border-radius:5px;background:rgba(241,237,226,.1);overflow:hidden"><div style="height:100%;border-radius:5px;background:linear-gradient(90deg,#9c6f5e,#d4ab6a);width:{{ t.v }}"></div></div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+            </sc-if>
+            <sc-if value="{{ firstRun }}" hint-placeholder-val="{{ false }}">
+            <div style="text-align:center;padding:54px 10px 0">
+              <div style="position:relative;width:70px;height:70px;margin:0 auto 20px"><div style="position:absolute;top:50%;left:50%;width:70px;height:70px;border-radius:50%;background:radial-gradient(circle,#7d9170 0%,rgba(125,145,112,0) 70%);transform:translate(-50%,-50%)"></div></div>
+              <div style="font-size:17px;font-weight:700;margin-bottom:8px">No patterns yet</div>
+              <p style="margin:0;font-size:13.5px;line-height:1.6;color:#bcc3b1">Your aura fills in as you log. A few<br>episodes is all it takes to see trends.</p>
+            </div>
+            </sc-if>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1180,&quot;height&quot;:760},&quot;firstRun&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;},&quot;reduceMotion&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const firstRun = this.props.firstRun ?? false;
+    const reduceMotion = this.props.reduceMotion ?? false;
+
+    const months = [
+      { m: 'Jan', h: '34%' }, { m: 'Feb', h: '58%' }, { m: 'Mar', h: '44%' },
+      { m: 'Apr', h: '82%' }, { m: 'May', h: '50%' }, { m: 'Jun', h: '26%' }
+    ];
+    const triggers = [
+      { t: 'Stress', v: '88%' }, { t: 'Poor sleep', v: '66%' }, { t: 'Screen time', v: '50%' },
+      { t: 'Dehydration', v: '34%' }, { t: 'Caffeine', v: '22%' }
+    ];
+    const recent = [
+      { date: 'Today, 2:30 PM', pain: '7', loc: 'Right side', tagline: 'Light sensitivity · Nausea', color: '#c07d63' },
+      { date: 'Mon, 9:10 AM', pain: '4', loc: 'Behind eyes', tagline: 'Stress · Screen time', color: '#d4ab6a' },
+      { date: 'Fri, 7:00 PM', pain: '3', loc: 'Forehead', tagline: 'Poor sleep', color: '#8fae84' }
+    ];
+    // 10-step pain scale: first 7 filled with a warm gradient, rest muted
+    const ramp = ['#8fae84','#9bae7d','#b3b074','#c9aa6c','#d4a368','#d49568','#c98266','#c07d63','#bb7059','#b3624f'];
+    const scale = ramp.map((c, i) => ({ c: i < 7 ? c : '#e6e0d3' }));
+
+    return {
+      firstRun,
+      hasData: !firstRun,
+      motionClass: reduceMotion ? 'motion-off' : 'motion-on',
+      months: firstRun ? [] : months,
+      triggers: firstRun ? [] : triggers,
+      recent: firstRun ? [] : recent,
+      scale
+    };
+  }
+}
+</script>
+</body>
+</html>
